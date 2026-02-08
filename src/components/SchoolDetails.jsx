@@ -6,7 +6,10 @@ const SchoolDetails = () => {
   const udise = "070502ND201"; // later you can make dynamic
 
   useEffect(() => {
-    fetch(`http://localhost:9000/api/schools/${udise}`)
+    // fetch(`http://localhost:9000/api/schools/${udise}`)
+
+       fetch(` https://schoolbackendudise-u4nx.onrender.com/${udise}`)
+   
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);

@@ -16,7 +16,9 @@ const UdiseSearch = () => {
     setError("");
     
     try {
-      const res = await fetch(`http://localhost:9000/api/schools/${udise}`);
+
+      // https://schoolbackendudise-u4nx.onrender.com/api/schools/070502ND201
+      const res = await fetch(` https://schoolbackendudise-u4nx.onrender.com/api/schools/${udise}`);
       if (!res.ok) {
         throw new Error("School not found");
       }
@@ -32,7 +34,7 @@ const UdiseSearch = () => {
 
   const updatePreferred = async (nearbyCode) => {
     try {
-      await fetch("http://localhost:9000/api/schools/preferred", {
+      await fetch(" https://schoolbackendudise-u4nx.onrender.com/api/schools/preferred", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
