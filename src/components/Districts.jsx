@@ -425,7 +425,7 @@ export default function Districts() {
               Select Your District
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Browse schools by district. Select a district to view all schools in that area.
+              {/* Browse schools by district. Select a district to view all schools in that area. */}
             </p>
           </div>
         )}
