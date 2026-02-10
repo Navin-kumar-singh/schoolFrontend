@@ -54,7 +54,8 @@
 // };
 
 // src/api/index.js
-const API_BASE_URL = 'http://localhost:9000/api';
+// const API_BASE_URL = 'http://localhost:9000/api';
+  const API_BASE_URL='https://schoolbackendudise-u4nx.onrender.com'
 
 // Fetch all districts
 export const fetchDistricts = async () => {
