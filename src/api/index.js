@@ -55,12 +55,16 @@
 
 // src/api/index.js
 // const API_BASE_URL = 'http://localhost:9000/api';
-  const API_BASE_URL='https://schoolbackendudise-u4nx.onrender.com/'
+
+
+
+  const API_BASE_URL='https://schoolbackendforlocation.onrender.com/api'
 
 // Fetch all districts
 export const fetchDistricts = async () => {
   try {
     const response = await fetch(`${API_BASE_URL}/schools/districts`);
+    console.log(response, "this is my respone ................................................................................")
     if (!response.ok) {
       throw new Error('Failed to fetch districts');
     }
