@@ -1,6 +1,6 @@
 // const API_BASE_URL ="http://localhost:9000/api";
 
-const API_BASE_URL = 'https://schooludise.onrender.com//api'; // or localhost
+const API_BASE_URL = 'https://schooludise.onrender.com/api'; // or localhost
 
 export const fetchDistricts = async () => {
   try {
