@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Districts from "./components/Districts";
 import Schools from "./components/Schools";
-import Visit from "./components/Visit";
+import Visited_School from "./components/Visit";
 import "./App.css";
 
 export default function App() {
@@ -53,8 +53,8 @@ export default function App() {
                     Districts
                   </a>
                   <span className="text-gray-300">|</span>
-                  <a href="/visit" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                    Visit
+                  <a href="/visit" className="text-rose-700 hover:text-blue-600 font-bold transition-colors ">
+                  Visited_School
                   </a>
                 </nav>
               </div>
@@ -66,7 +66,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Districts />} />
             <Route path="/district/:name" element={<Schools />} />
-            <Route path="/visit" element={<Visit />} />
+            <Route path="/visit" element={<Visited_School />} />
           </Routes>
         </main>
 
